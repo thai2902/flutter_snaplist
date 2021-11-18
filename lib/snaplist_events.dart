@@ -20,9 +20,9 @@ class EndEvent {
 }
 
 class SnipStartEvent {
-  final double offset;
+  final double? offset;
   final double targetOffset;
-  final double progress;
+  final double? progress;
 
   SnipStartEvent(this.offset, this.targetOffset, this.progress);
 }
@@ -41,8 +41,8 @@ class PositionChangeEvent {
 }
 
 class OffsetEvent {
-  final double offset;
-  final double progress;
+  final double? offset;
+  final double? progress;
   final int centerPosition;
   final int nextPosition;
 
@@ -53,7 +53,7 @@ class OffsetEvent {
 class UiEvent {
   final int center;
   final int next;
-  final double progress;
+  final double? progress;
 
   UiEvent(this.center, this.next, this.progress);
 }
